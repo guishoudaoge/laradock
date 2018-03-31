@@ -366,6 +366,14 @@ services:
       networks:
         - backend
 
+    redis-cluster:
+      image: grokzen/redis-cluster
+      #build: ./redis-cluster
+      ports:
+        - '7000-7007:7000-7007'
+      networks:
+        - backend
+
 ### Aerospike c Container ###################################
 
     aerospike:
