@@ -32,8 +32,11 @@ COMPOSE_FILE=docker-compose.yml:docker-compose.dev.yml
 
 ### Docker Host IP #####################################################################################################
 # Enter your Docker Host IP (will be appended to /etc/hosts). Default is `10.0.75.1`
+# Default is 172.21.0.1 when it is under Windows 7
+DOCKER_HOST_IP=172.21.0.1
 
-DOCKER_HOST_IP=10.0.75.1
+# Windows Host IP  Can get the address via 'docker-compose logs nginx'
+WIN_HOST_IP=192.168.99.1
 
 ### Remote Interpreter #################################################################################################
 # Choose a Remote Interpreter entry matching name. Default is `laradock`
