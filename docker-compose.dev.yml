@@ -6,4 +6,13 @@ services:
 
     applications:
       volumes:
-        - ${APPLICATION}:/var/www
+        - ../own/webapp:/usr/local/rms/evt/delivery/webapp/owners.delivery.rakuten.co.jp/current
+        - ../own/lib:/usr/local/rms/evt/delivery/lib/owners.delivery.rakuten.co.jp/current
+        - ../own/env:/usr/local/rms/evt/delivery/env
+        - ../own/html:/usr/local/apache/vhosts/owners.delivery.rakuten.co.jp/htdocs
+        - ../own_others/extconf:/usr/local/rms/evt/delivery/extconf
+        - ../own_others/pear:/usr/local/phpenv/versions/5.6.16/share/pyrus/.pear/php
+        - ../own_others/log:/usr/local/var/log
+          #- ../own_others/tracker:/usr/local/var/log/td-agent/tracker
+
+        
